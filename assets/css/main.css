@@ -1,5 +1,5 @@
-@import url(font-awesome.min.css);
-@import url(fonts.css);
+@import "font-awesome.min.css";
+@import "fonts.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 html, body, div, span, applet, object,
@@ -112,9 +112,9 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "gilroy", Helvetica, sans-serif;
+		font-family: 'Gilroy', 'Open Sans', Helvetica, sans-serif;
 		font-size: 17pt;
-		font-weight: 300;
+		font-weight: 400;
 		letter-spacing: 0.025em;
 		line-height: 1.65;
 	}

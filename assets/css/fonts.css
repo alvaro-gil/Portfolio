@@ -1,8 +1,8 @@
-/* GILROY */
+/* Gilroy */
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-Thin.otf") format("opentype");
   font-weight: 100;
   font-style: normal;
@@ -10,7 +10,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-UltraLight.otf") format("opentype");
   font-weight: 200;
   font-style: normal;
@@ -18,7 +18,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
@@ -26,7 +26,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
@@ -34,7 +34,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
@@ -42,7 +42,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-Semibold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
@@ -50,7 +50,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
@@ -58,7 +58,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-Extrabold.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
@@ -66,7 +66,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-Black.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
@@ -74,7 +74,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-Heavy.otf") format("opentype");
   font-weight: 1000;
   font-style: normal;
@@ -82,11 +82,11 @@
 
 
 
-/* GILROY ITALIC */
+/* Gilroy ITALIC */
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-ThinItalic.otf") format("opentype");
   font-weight: 100;
   font-style: italic;
@@ -94,7 +94,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-UltraLightItalic.otf") format("opentype");
   font-weight: 200;
   font-style: italic;
@@ -102,7 +102,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-LightItalic.otf") format("opentype");
   font-weight: 300;
   font-style: italic;
@@ -110,7 +110,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-RegularItalic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
@@ -118,7 +118,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-MediumItalic.otf") format("opentype");
   font-weight: 500;
   font-style: italic;
@@ -126,7 +126,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-SemiboldItalic.otf") format("opentype");
   font-weight: 600;
   font-style: italic;
@@ -134,7 +134,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-BoldItalic.otf") format("opentype");
   font-weight: 700;
   font-style: italic;
@@ -142,7 +142,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-ExtraboldItalic.otf") format("opentype");
   font-weight: 800;
   font-style: italic;
@@ -150,7 +150,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-BlackItalic.otf") format("opentype");
   font-weight: 900;
   font-style: italic;
@@ -158,7 +158,7 @@
 
 @font-face
 {
-  font-family: gilroy;
+  font-family: Gilroy;
   src: url("../assets/fonts/BryantPro-HeavyItalic.otf") format("opentype");
   font-weight: 1000;
   font-style: italic;
