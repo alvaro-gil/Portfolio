@@ -115,7 +115,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #999999;
 		font-family: 'Gilroy', 'Open Sans', Helvetica, sans-serif;
-		font-size: 17pt;
+		font-size: 16pt;
 		font-weight: 400;
 		letter-spacing: 0.025em;
 		line-height: 1.65;
@@ -124,7 +124,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 16pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -132,7 +132,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 14pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -3723,7 +3723,7 @@ input, select, textarea {
 /* Footer */
 
 	footer {
-		background-color: #FAFAFA;
+		background-color: #F0F0F0;
 		text-align: center;
 	}
 
@@ -4148,8 +4148,18 @@ input, select, textarea {
 			margin: 0;
 		}
 
-		.case-study p {
+		.case-study p, .case-study li {
 			opacity: 0.75;
+		}
+
+		.case-study ul, .case-study li {
+			text-decoration: none;
+		}
+
+		.case-study .col-container i {
+			text-align: center;
+			line-height: 1.5;
+			font-weight: 500;
 		}
 
 		.blue-grad {
@@ -4185,13 +4195,21 @@ input, select, textarea {
 		}
 
 		.grey {
-			background-color: #242C46;
+			background-color: #F0F0F0;
 			color: #333333;
 		}
 
 		.grey h1, .grey h2, .grey h3,
 		.grey h4, .grey h5, .grey h6 {
-			color: #333333 !important;
+			color: #55AAFF !important;
+		}
+
+		.case-study#user-quote {
+			background-image: url("../../images/case-studies/utopia/Utopia-UserQuote-BG.jpg");
+			height: 100%;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
 		}
 
 		@media screen and (max-width: 768px) {
@@ -4226,8 +4244,6 @@ input, select, textarea {
 				}
 
 		}
-
-
 
 		.col-container {
 			padding: 1em 0;
