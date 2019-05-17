@@ -2722,12 +2722,9 @@ input, select, textarea {
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
-			-moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
-			-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
-			-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
-			transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
 			margin: 0 0 1em 0;
-			padding: 6em 4em;
+			/* padding: 6em 4em; */
+			background-color: #000000;
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -2741,8 +2738,32 @@ input, select, textarea {
 			text-align: center;
 		}
 
-			.tiles article .image {
-				display: none;
+			.tiles img {
+				position: absolute;
+				object-fit: cover;
+				object-position: 50% 50%;
+				height: 100%;
+				width: 100%;
+			}
+
+			.tiles article img {
+				-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
+				-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
+				-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
+				transition: transform 0.5s ease, opacity 0.5s ease, filter 1s ease, -webkit-filter 1s ease;
+				opacity: 1;
+			}
+
+			.tiles article:hover img, .tiles article:focus img {
+				opacity: 0.5;
+				-moz-transform: scale(1.03);
+				-webkit-transform: scale(1.03);
+				-ms-transform: scale(1.03);
+				transform: scale(1.03);
+				-moz-filter: blur(0.5em);
+				-webkit-filter: blur(0.5em);
+				-ms-filter: blur(0.5em);
+				filter: blur(0.5em);
 			}
 
 			.tiles article header {
@@ -2765,6 +2786,8 @@ input, select, textarea {
 				-webkit-filter: blur(0.25em);
 				-ms-filter: blur(0.25em);
 				filter: blur(0.25em);
+
+				padding: 6em 4em;
 			}
 
 			.tiles article:hover header, .tiles article:focus header {
@@ -2807,7 +2830,12 @@ input, select, textarea {
 				z-index: 4;
 			}
 
-			.tiles article:before {
+			/* .tiles article:before {
+				-moz-transition: opacity 0.25s ease;
+				-webkit-transition: opacity 0.25s ease;
+				-ms-transition: opacity 0.25s ease;
+				transition: opacity 0.25s ease;
+
 				bottom: 0;
 				background-color: transparent;
 				content: '';
@@ -2830,7 +2858,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 1;
-			}
+			} */
 
 			/* .tiles article:hover {
 				-moz-transform: scale(0.98);
@@ -2862,7 +2890,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.tiles article {
-				padding: 5em 3em;
+				/* padding: 5em 3em; */
 				height: 60vh;
 				/* max-height: 30em; */
 				min-height: 20em;
@@ -2882,7 +2910,7 @@ input, select, textarea {
 		@media screen and (max-width: 768px) {
 
 			.tiles article {
-				padding: 2em;
+				/* padding: 2em; */
 				height: 20em;
 				max-height: none;
 				min-height: 0;
@@ -2927,7 +2955,7 @@ input, select, textarea {
 
 /* Spotlights */
 
-	.spotlights {
+	/* .spotlights {
 		border-top: 0 !important;
 	}
 
@@ -3063,7 +3091,7 @@ input, select, textarea {
 				padding: 3em 1.5em 1em 1.5em ;
 			}
 
-		}
+		} */
 
 /* Header */
 
@@ -3433,6 +3461,7 @@ input, select, textarea {
 
 		#banner h1 {
 			font-size: 4em;
+			margin: 0;
 		}
 
 		#banner > .inner {
