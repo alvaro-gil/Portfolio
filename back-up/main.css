@@ -3263,37 +3263,24 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			-moz-transition: opacity 0.75s ease, -moz-transform 0.5s ease-out, -moz-filter 0.75s ease, -webkit-filter 0.75s ease;
-			-webkit-transition: opacity 0.75s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.75s ease;
-			-ms-transition: opacity 0.75s ease, -ms-transform 0.5s ease-out, -ms-filter 0.75s ease, -webkit-filter 0.75s ease;
-			transition: opacity 0.75s ease, transform 0.5s ease-out, filter 0.75s ease, -webkit-filter 0.75s ease;
-
-			-moz-transition-delay: 0.5s;
-			-webkit-transition-delay: 0.5s;
-			-ms-transition-delay: 0.5s;
-			transition-delay: 0.5s;
-
+			-moz-transition: opacity 2.5s ease;
+			-webkit-transition: opacity 2.5s ease;
+			-ms-transition: opacity 2.5s ease;
+			transition: opacity 2.5s ease;
+			-moz-transition-delay: 0.75s;
+			-webkit-transition-delay: 0.75s;
+			-ms-transition-delay: 0.75s;
+			transition-delay: 0.75s;
 			-moz-animation: none;
 			-webkit-animation: none;
 			-ms-animation: none;
 			animation: none;
-
 			background-color: transparent;
 			box-shadow: none;
 			position: absolute;
 		}
 
 		body.is-preload #header.alt {
-
-			-moz-filter: blur(0.5em);
-			-webkit-filter: blur(0.5em);
-			-ms-filter: blur(0.5em);
-			filter: blur(0.5em);
-			-moz-transform: translateX(-0.5em);
-			-webkit-transform: translateX(-0.5em);
-			-ms-transform: translateX(-0.5em);
-			transform: translateX(-0.5em);
-
 			opacity: 0;
 		}
 
@@ -3386,16 +3373,7 @@ input, select, textarea {
 		background-image: url("../../images/Header-BG-V1.JPG");
 	}
 
-	#hero-utopia {
-		/* background-image: url("../../images/case-studies/utopia/Utopia-Banner-Devices.png"); */
-	}
-
 	.banner {
-		-moz-transition: opacity 0.75s ease, -moz-transform 0.5s ease-out, -moz-filter 0.75s ease, -webkit-filter 0.75s ease;
-		-webkit-transition: opacity 0.75s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.75s ease;
-		-ms-transition: opacity 0.75s ease, -ms-transform 0.5s ease-out, -ms-filter 0.75s ease, -webkit-filter 0.75s ease;
-		transition: opacity 0.75s ease, transform 0.5s ease-out, filter 0.75s ease, -webkit-filter 0.75s ease;
-
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3412,26 +3390,47 @@ input, select, textarea {
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
+		/*height: 60vh;*/
 		height: 40vh;
-		/* margin-bottom: -3.25em; */
+		margin-bottom: -3.25em;
 		max-height: 32em;
 		min-height: 22em;
 		position: relative;
-		/* top: -3.25em; */
+		top: -3.25em;
 	}
 
+		/* .banner:after {
+			-moz-transition: opacity 2.5s ease;
+			-webkit-transition: opacity 2.5s ease;
+			-ms-transition: opacity 2.5s ease;
+			transition: opacity 2.5s ease;
+			-moz-transition-delay: 0.75s;
+			-webkit-transition-delay: 0.75s;
+			-ms-transition-delay: 0.75s;
+			transition-delay: 0.75s;
+			pointer-events: none;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.85;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+			border: 0 !important;
+		} */
+
+		.banner h1 {
+			font-size: 4em;
+			margin: 0;
+		}
+
 		.banner > .inner {
-
-			-moz-transition: opacity 0.75s ease, -moz-transform 0.5s ease-out, -moz-filter 0.75s ease, -webkit-filter 0.75s ease;
-			-webkit-transition: opacity 0.75s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.75s ease;
-			-ms-transition: opacity 0.75s ease, -ms-transform 0.5s ease-out, -ms-filter 0.75s ease, -webkit-filter 0.75s ease;
-			transition: opacity 0.75s ease, transform 0.5s ease-out, filter 0.75s ease, -webkit-filter 0.75s ease;
-
-			-moz-transition-delay: 0.5s;
-			-webkit-transition-delay: 0.5s;
-			-ms-transition-delay: 0.5s;
-			transition-delay: 0.5s;
-
+			-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
+			-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
+			-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+			transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
@@ -3442,15 +3441,48 @@ input, select, textarea {
 			}
 
 			.banner > .inner header {
-				width: 65%;
+				width: auto;
 			}
 
-			.banner > .inner header *:last-child {
-				margin: 0;
+				.banner > .inner header > :first-child {
+					width: auto;
+				}
+
+					.banner > .inner header > :first-child:after {
+						max-width: 100%;
+					}
+
+			.banner > .inner .content {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+				margin: 0 0 2em 0;
 			}
+
+				.banner > .inner .content > * {
+					margin-right: 1.5em;
+					margin-bottom: 0;
+				}
+
+				.banner > .inner .content > :last-child {
+					margin-right: 0;
+				}
+
+				.banner > .inner .content p {
+					font-size: 0.7em;
+					font-weight: 700;
+					letter-spacing: 0.25em;
+					text-transform: uppercase;
+				}
 
 		.banner.major {
 			height: 60vh;
+			/*min-height: 30em;*/
 			max-height: 60em;
 		}
 
@@ -3458,23 +3490,15 @@ input, select, textarea {
 				opacity: 0.75;
 			}
 
-		body.is-preload .banner /*> .inner*/ {
-			-moz-filter: blur(0.5em);
-			-webkit-filter: blur(0.5em);
-			-ms-filter: blur(0.5em);
-			filter: blur(0.5em);
-			/* -moz-transform: translateX(-0.5em);
-			-webkit-transform: translateX(-0.5em);
-			-ms-transform: translateX(-0.5em);
-			transform: translateX(-0.5em); */
-			opacity: 0;
+		body.is-preload .banner:after {
+			opacity: 1.0;
 		}
 
 		body.is-preload .banner > .inner {
-			-moz-filter: blur(0.5em);
-			-webkit-filter: blur(0.5em);
-			-ms-filter: blur(0.5em);
-			filter: blur(0.5em);
+			-moz-filter: blur(0.125em);
+			-webkit-filter: blur(0.125em);
+			-ms-filter: blur(0.125em);
+			filter: blur(0.125em);
 			-moz-transform: translateX(-0.5em);
 			-webkit-transform: translateX(-0.5em);
 			-ms-transform: translateX(-0.5em);
@@ -3482,20 +3506,41 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		/* .utopia {
+			background-image: url("../../images/case-studies/utopia/Utopia-Banner-BG.jpg") !important;
+		} */
+
+		@media screen and (max-width: 1280px) {
+
+			.banner {
+				/* background-attachment: scroll; */
+			}
+
+		}
+
 		@media screen and (max-width: 768px) {
 
 			.banner {
 				padding: 8em 0 5em 0 ;
 				height: auto;
-				/* margin-bottom: -2.75em; */
+				margin-bottom: -2.75em;
 				max-height: none;
 				min-height: 0;
-				/* top: -2.75em; */
+				top: -2.75em;
 			}
 
-				.banner > .inner header {
-					width: 75%;
+				.banner h1 {
+					font-size: 3em;
 				}
+
+				.banner > .inner .content {
+					display: block;
+				}
+
+					.banner > .inner .content > * {
+						margin-right: 0;
+						margin-bottom: 2em;
+					}
 
 				.banner.major {
 					height: auto;
@@ -3511,9 +3556,9 @@ input, select, textarea {
 				padding: 8em 0 5em 0 ;
 			}
 
-			.banner > .inner header {
-				width: 100%;
-			}
+				.banner > .inner .content p br {
+					display: none;
+				}
 
 				.banner.major {
 					padding: 8em 0 5em 0 ;
@@ -3524,33 +3569,33 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		-moz-transition: opacity 0.75s ease, -moz-transform 0.5s ease-out, -moz-filter 0.75s ease, -webkit-filter 0.75s ease;
-		-webkit-transition: opacity 0.75s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.75s ease;
-		-ms-transition: opacity 0.75s ease, -ms-transform 0.5s ease-out, -ms-filter 0.75s ease, -webkit-filter 0.75s ease;
-		transition: opacity 0.75s ease, transform 0.5s ease-out, filter 0.75s ease, -webkit-filter 0.75s ease;
-
-		-moz-transition-delay: 1.0s;
-		-webkit-transition-delay: 1.0s;
-		-ms-transition-delay: 1.0s;
-		transition-delay: 1.0s;
-
 		background-color: #FFFFFF;
 	}
 
 	#main > .inner {
+		-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
+		-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
+		-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+		transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
+
+		-moz-transition-delay: 0.75s;
+		-webkit-transition-delay: 0.75s;
+		-ms-transition-delay: 0.75s;
+		transition-delay: 0.75s;
+
 		position: relative;
 		z-index: 2;
 	}
 
-	body.is-preload #main {
-		-moz-filter: blur(0.5em);
-		-webkit-filter: blur(0.5em);
-		-ms-filter: blur(0.5em);
-		filter: blur(0.5em);
-		/* -moz-transform: translateX(-0.5em);
+	body.is-preload #main > .inner {
+		-moz-filter: blur(0.125em);
+		-webkit-filter: blur(0.125em);
+		-ms-filter: blur(0.125em);
+		filter: blur(0.125em);
+		-moz-transform: translateX(-0.5em);
 		-webkit-transform: translateX(-0.5em);
 		-ms-transform: translateX(-0.5em);
-		transform: translateX(-0.5em); */
+		transform: translateX(-0.5em);
 		opacity: 0;
 	}
 
@@ -3659,6 +3704,25 @@ input, select, textarea {
 
 		}
 
+/* About
+
+	#about {
+		background-color: #F0F0F0;
+	}
+
+	#about .container {
+		width: 40%;
+	}
+
+	#about h3 {
+		color: #3366FF;
+	}
+
+	#about p, #about h5 {
+		color: #333333;
+	}
+*/
+
 /* Footer */
 
 	footer {
@@ -3732,7 +3796,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
-		/* padding-top: 3.25em; */
+		padding-top: 3.25em;
 	}
 
 		#wrapper.is-transitioning {
@@ -3749,7 +3813,7 @@ input, select, textarea {
 			@media screen and (max-width: 768px) {
 
 				#wrapper {
-					/* padding-top: 2.75em; */
+					padding-top: 2.75em;
 				}
 
 				#wrapper > * > .inner {
@@ -3962,25 +4026,47 @@ input, select, textarea {
 		border-bottom: 0 !important;
 		cursor: default;
 		position: relative;
+		top: -3.25em;
 		overflow: hidden;
 	}
 
 		.case-study > .inner {
-
-			-moz-transition: opacity 0.75s ease, -moz-transform 0.5s ease-out, -moz-filter 0.75s ease, -webkit-filter 0.75s ease;
-			-webkit-transition: opacity 0.75s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.75s ease;
-			-ms-transition: opacity 0.75s ease, -ms-transform 0.5s ease-out, -ms-filter 0.75s ease, -webkit-filter 0.75s ease;
-			transition: opacity 0.75s ease, transform 0.5s ease-out, filter 0.75s ease, -webkit-filter 0.75s ease;
-
-			-moz-transition-delay: 1.5s;
-			-webkit-transition-delay: 1.5s;
-			-ms-transition-delay: 1.5s;
-			transition-delay: 1.5s;
-
+			-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
+			-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
+			-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+			transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
 		}
+
+			.case-study > .inner .content {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+				/* margin: 0 0 2em 0; */
+			}
+
+				.case-study > .inner .content > * {
+					margin-right: 1.5em;
+					margin-bottom: 0;
+				}
+
+				.case-study > .inner .content > :last-child {
+					margin-right: 0;
+				}
+
+				.case-study > .inner .content p {
+					font-size: 0.7em;
+					font-weight: 700;
+					letter-spacing: 0.25em;
+					text-transform: uppercase;
+				}
 
 		.case-study.major {
 			/*min-height: 30em;*/
@@ -3996,10 +4082,10 @@ input, select, textarea {
 		}
 
 		body.is-preload .case-study > .inner {
-			-moz-filter: blur(0.5em);
-			-webkit-filter: blur(0.5em);
-			-ms-filter: blur(0.5em);
-			filter: blur(0.5em);
+			-moz-filter: blur(0.125em);
+			-webkit-filter: blur(0.125em);
+			-ms-filter: blur(0.125em);
+			filter: blur(0.125em);
 			-moz-transform: translateX(-0.5em);
 			-webkit-transform: translateX(-0.5em);
 			-ms-transform: translateX(-0.5em);
@@ -4007,10 +4093,55 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		.case-study.banner {
+			padding: 8em 0 2em 0;
+			/* height: 85vh; */
+			/* height: 60vh; */
+			/* margin-bottom: -3.25em; */
+			max-height: 85vh !important;
+			min-height: 22em;
+		}
+
+		.case-study.banner header {
+			width: 100%;
+		}
+
+		.case-study.banner header p {
+			margin: 2em 0 0 0;
+			font-weight: 400;
+			color: #FFFFFF;
+			opacity: 0.85;
+			margin: 0;
+		}
+
+		.case-study.banner header h5 {
+			font-weight: 500;
+			margin: 0;
+		}
+
+		.case-study.banner header h3 {
+			font-weight: 800;
+			margin: 0.25em 0 0.5em 0;
+		}
+
 		.case-study img {
 			width: 100%;
 			height: auto;
 		}
+
+		/* .case-study .img-container {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+		}
+
+		.case-study .img-container img {
+			position: absolute;
+			object-fit: cover;
+			object-position: 50% 50%;
+			height: inherit;
+			width: inherit;
+		} */
 
 		.case-study .col-container {
 			padding: 2em 0;
@@ -4086,6 +4217,11 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 768px) {
+
+			/* .case-study {
+				margin-bottom: -2.75em;
+				top: -2.75em;
+			} */
 
 				.case-study {
 					padding: 3em 0;

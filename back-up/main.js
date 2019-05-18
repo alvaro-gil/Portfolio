@@ -5,7 +5,6 @@
 		$wrapper = $('#wrapper'),
 		$header = $('#header'),
 		$banner = $('.banner'); // was #banner
-		$parallax = $('.parallax');
 
 	// Breakpoints.
 		breakpoints({
@@ -39,7 +38,7 @@
 		}
 
 		if (!intensity)
-			intensity = 0.35;
+			intensity = 0.25;
 
 		$this.each(function() {
 
@@ -204,8 +203,8 @@
 
 		}
 
-	// Banner. Actually Parallax
-		$parallax.each(function() { // "$parallax" was "$banner"
+	// Banner.
+		$banner.each(function() {
 
 			var $this = $(this),
 				$image = $this.find('.image'), $img = $image.find('img');
