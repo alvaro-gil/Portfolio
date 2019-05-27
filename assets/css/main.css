@@ -3203,8 +3203,8 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		padding: 8em 0 5em;
-		background-attachment: fixed;
-		background-position: center;
+		background-attachment: scroll;
+		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
@@ -3850,8 +3850,8 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		/* padding: 4em 0; */
-		background-attachment: fixed;
-		background-position: center;
+		background-attachment: scroll;
+		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
