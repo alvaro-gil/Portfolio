@@ -1,6 +1,6 @@
 /* Gilroy */
 
-@font-face
+/* @font-face
 {
   font-family: Gilroy;
   src: url("../fonts/Gilroy-Thin.otf") format("opentype");
@@ -22,7 +22,7 @@
   src: url("../fonts/Gilroy-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
-}
+} */
 
 @font-face
 {
@@ -56,7 +56,7 @@
   font-style: normal;
 }
 
-@font-face
+/* @font-face
 {
   font-family: Gilroy;
   src: url("../fonts/Gilroy-Extrabold.otf") format("opentype");
@@ -78,13 +78,13 @@
   src: url("../fonts/Gilroy-Heavy.otf") format("opentype");
   font-weight: 1000;
   font-style: normal;
-}
+} */
 
 
 
 /* Gilroy Italic */
 
-@font-face
+/* @font-face
 {
   font-family: Gilroy;
   src: url("../fonts/Gilroy-ThinItalic.otf") format("opentype");
@@ -106,7 +106,7 @@
   src: url("../fonts/Gilroy-LightItalic.otf") format("opentype");
   font-weight: 300;
   font-style: italic;
-}
+} */
 
 @font-face
 {
@@ -140,7 +140,7 @@
   font-style: italic;
 }
 
-@font-face
+/* @font-face
 {
   font-family: Gilroy;
   src: url("../fonts/Gilroy-ExtraboldItalic.otf") format("opentype");
@@ -162,4 +162,4 @@
   src: url("../fonts/Gilroy-HeavyItalic.otf") format("opentype");
   font-weight: 1000;
   font-style: italic;
-}
+} */
