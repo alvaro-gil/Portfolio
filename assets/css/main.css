@@ -3203,8 +3203,8 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		padding: 8em 0 5em;
-		background-attachment: scroll;
-		background-position: center top;
+		background-attachment: fixed;
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
@@ -3273,6 +3273,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 768px) {
+
+				.banner {
+					background-attachment: scroll;
+				}
 
 				.banner > .inner header {
 					width: 75%;
@@ -3850,8 +3854,8 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		/* padding: 4em 0; */
-		background-attachment: scroll;
-		background-position: center top;
+		background-attachment: fixed;
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
@@ -4023,6 +4027,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 768px) {
+
+				.case-study {
+					background-attachment: scroll;
+				}
 
 				.case-study header {
 					width: 75%;
