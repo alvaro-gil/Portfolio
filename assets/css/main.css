@@ -2485,16 +2485,15 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
-		border: 0;
+		border: 2px solid #FFFFFF;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #ffffff;
-		color: #ffffff;
+		margin: 1.5em 0 0 0 !important;
+		color: #FFFFFF;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
 		font-weight: 700;
 		height: 3.5em;
-		letter-spacing: 0.25em;
 		line-height: 3.5em;
 		padding: 0 1.75em;
 		text-align: center;
@@ -2512,11 +2511,11 @@ input, select, textarea {
 		button:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 2px #9bf1ff;
-			color: #9bf1ff;
+			color: #333333;
+			background-color: #FFFFFF;
 		}
 
-		input[type="submit"]:active,
+		/* input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		button:active,
@@ -2524,7 +2523,7 @@ input, select, textarea {
 			background-color: rgba(155, 241, 255, 0.1);
 			box-shadow: inset 0 0 0 2px #53e3fb;
 			color: #53e3fb;
-		}
+		} */
 
 		input[type="submit"].icon:before,
 		input[type="reset"].icon:before,
@@ -2968,6 +2967,10 @@ input, select, textarea {
 			height: 3.5em;
 		}
 
+		#header .logo.onlight{
+			fill: #3366FF;
+		}
+
 		#header.reveal .logo {
 			background-color: #3366FF;
 			fill: #FFFFFF;
@@ -3183,9 +3186,18 @@ input, select, textarea {
 
 /* Banner */
 
-	#hero-home {
+	.banner#hero-home {
 		background-color: #3366FF;
 		background-image: url("../../images/Header-BG-V1.png");
+	}
+
+	.banner #video {
+		position: absolute;
+		top: 0;
+		object-fit: cover;
+		/* object-position: 50% 50%; */
+		height: 100%;
+		width: 100%;
 	}
 
 	.banner {
@@ -3213,6 +3225,7 @@ input, select, textarea {
 		max-height: 32em;
 		min-height: 22em;
 		position: relative;
+		overflow: hidden;
 	}
 
 		.banner > .inner {
@@ -3838,6 +3851,10 @@ input, select, textarea {
 		background-image: url("../../images/case-studies/utopia/Utopia-Banner-BG.png");
 	}
 
+	#hero-voila {
+		background-image: url("../../images/case-studies/voila/VoiLa-Banner-BG.png");
+	}
+
 	.case-study {
 		/* -moz-transition: opacity 0.75s ease, -moz-transform 0.5s ease-out, -moz-filter 0.75s ease, -webkit-filter 0.75s ease;
 		-webkit-transition: opacity 0.75s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.75s ease;
@@ -3959,14 +3976,35 @@ input, select, textarea {
 			/* box-shadow: 0 1em 4em rgba(0, 0, 0, .75); */
 		}
 
+		.case-study img.shadow-35 {
+			background-color: transparent;
+			-webkit-filter: drop-shadow( 0 0.25em 1em rgba(0, 0, 0, .35) );
+  		filter: drop-shadow( 0 0.25em 1em rgba(0, 0, 0, .35) );
+			/* box-shadow: 0 1em 4em rgba(0, 0, 0, .75); */
+		}
+
 		.blue-grad {
 			background-color: #55AAFF;
 			background-image: linear-gradient( #77DDFF, #55AAFF );
 			color: #FFFFFF;
 		}
 
+		.brown {
+			background-color: #453230;
+			color: #FFFFFF;
+		}
+
+		.tan {
+			background-color: #937867;
+			color: #FFFFFF;
+		}
+
 		.blue-grad h1, .blue-grad h2, .blue-grad h3,
-		.blue-grad h4, .blue-grad h5, .blue-grad h6 {
+		.blue-grad h4, .blue-grad h5, .blue-grad h6,
+		.brown h1, .brown h2, .brown h3,
+		.brown h4, .brown h5, .brown h6,
+		.tan h1, .tan h2, .tan h3,
+		.tan h4, .tan h5, .tan h6 {
 			color: #FFFFFF;
 		}
 
@@ -4023,6 +4061,23 @@ input, select, textarea {
 		}
 
 		.case-study#utopia-prototype .col-container {
+			margin-bottom: 0 !important;
+		}
+
+		.case-study#voila-user-quote {
+			background-image: url("../../images/case-studies/voila/VoiLa-UserQuote-BG.jpg");
+			height: 100%;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+			text-align: center;
+		}
+
+		.case-study#voila-prototype .inner {
+			padding-bottom: 0 !important;
+		}
+
+		.case-study#voila-prototype .col-container {
 			margin-bottom: 0 !important;
 		}
 
