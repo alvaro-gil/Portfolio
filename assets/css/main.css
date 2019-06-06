@@ -2502,7 +2502,8 @@ input, select, textarea {
 		white-space: nowrap;
 	}
 
-		input[type="submit"]:hover, input[type="submit"]:active,
+		input[type="submit"]:hover,
+		input[type="submit"]:active,
 		input[type="reset"]:hover,
 		input[type="reset"]:active,
 		input[type="button"]:hover,
@@ -2511,8 +2512,31 @@ input, select, textarea {
 		button:active,
 		.button:hover,
 		.button:active {
-			color: #333333;
+			color: #666666;
 			background-color: #FFFFFF;
+		}
+
+		.white input[type="submit"],
+		.white input[type="reset"],
+		.white input[type="button"],
+		.white button,
+		.white .button {
+			border: 2px solid #666666;
+			color: #666666;
+		}
+
+		.white input[type="submit"]:hover,
+		.white input[type="submit"]:active,
+		.white input[type="reset"]:hover,
+		.white input[type="reset"]:active,
+		.white input[type="button"]:hover,
+		.white input[type="button"]:active,
+		.white button:hover,
+		.white button:active,
+		.white .button:hover,
+		.white .button:active {
+			color: #FFFFFF;
+			background-color: #666666;
 		}
 
 		/* input[type="submit"]:active,
@@ -2820,7 +2844,7 @@ input, select, textarea {
 				z-index: 4;
 			}
 
-			.tiles article:nth-child(3n + 2), .tiles article:nth-child(3n + 3) {
+			/* .tiles article:nth-child(3n + 2), .tiles article:nth-child(3n + 3) {
 				width: calc( 50% - 0.5em );
 			}
 
@@ -2830,7 +2854,7 @@ input, select, textarea {
 
 			.tiles article:nth-child(3n + 3) {
 				margin-left: 0.5em;
-			}
+			} */
 
 			.tiles article:last-child {
 				margin-bottom: 0;
@@ -3855,6 +3879,10 @@ input, select, textarea {
 		background-image: url("../../images/case-studies/voila/VoiLa-Banner-BG.png");
 	}
 
+	#hero-instagram {
+		background-image: url("../../images/case-studies/instagram/Instagram-Banner-BG.png");
+	}
+
 	.case-study {
 		/* -moz-transition: opacity 0.75s ease, -moz-transform 0.5s ease-out, -moz-filter 0.75s ease, -webkit-filter 0.75s ease;
 		-webkit-transition: opacity 0.75s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.75s ease;
@@ -3989,6 +4017,12 @@ input, select, textarea {
 			color: #FFFFFF;
 		}
 
+		.sunset-grad {
+			background-color: #BB31A0;
+			background-image: linear-gradient( #F36A37, #BB31A0 );
+			color: #FFFFFF;
+		}
+
 		.brown {
 			background-color: #453230;
 			color: #FFFFFF;
@@ -4001,6 +4035,8 @@ input, select, textarea {
 
 		.blue-grad h1, .blue-grad h2, .blue-grad h3,
 		.blue-grad h4, .blue-grad h5, .blue-grad h6,
+		.sunset-grad h1, .sunset-grad h2, .sunset-grad h3,
+		.sunset-grad h4, .sunset-grad h5, .sunset-grad h6
 		.brown h1, .brown h2, .brown h3,
 		.brown h4, .brown h5, .brown h6,
 		.tan h1, .tan h2, .tan h3,
