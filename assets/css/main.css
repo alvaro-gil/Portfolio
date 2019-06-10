@@ -3277,20 +3277,20 @@ input, select, textarea {
 				width: 50%;
 			}
 
-			.banner > .inner header *:last-child {
+			.banner > .inner .major *:last-child {
 				margin: 0;
 			}
 
-			.banner > .inner header * {
+			.banner > .inner .major * {
 				color: #FFFFFF;
 				margin: 0;
 			}
 
-			.banner > .inner header header {
+			.banner > .inner .major header {
 				margin: 0 0 1em 0;
 			}
 
-			.banner > .inner header h5 {
+			.banner > .inner .major h5 {
 				font-weight: 500;
 				color: #FFFFFF;
 				margin: 0;
@@ -3334,7 +3334,7 @@ input, select, textarea {
 				.banner > .inner .major {
 					width: 75%;
 				}
-				
+
 		}
 
 		@media screen and (max-width: 480px) {
