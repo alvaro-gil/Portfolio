@@ -3273,12 +3273,28 @@ input, select, textarea {
 				display: none;
 			}
 
-			.banner > .inner header {
-				width: 65%;
+			.banner > .inner .major {
+				width: 50%;
 			}
 
 			.banner > .inner header *:last-child {
 				margin: 0;
+			}
+
+			.banner > .inner header * {
+				color: #FFFFFF;
+				margin: 0;
+			}
+
+			.banner > .inner header header {
+				margin: 0 0 1em 0;
+			}
+
+			.banner > .inner header h5 {
+				font-weight: 500;
+				color: #FFFFFF;
+				margin: 0;
+				line-height: 1.5;
 			}
 
 			.banner.major.alt {
@@ -3315,7 +3331,7 @@ input, select, textarea {
 					background-attachment: scroll;
 				}
 
-				.banner > .inner header {
+				.banner > .inner .major {
 					width: 75%;
 				}
 
@@ -3323,7 +3339,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			.banner > .inner header {
+			.banner > .inner .major {
 				width: 100%;
 			}
 
